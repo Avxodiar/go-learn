@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+    fmt.Println("Welcome to the real world!")
     fmt.Println("Are you ready? (yes/no)")
 
     scanner := bufio.NewScanner(os.Stdin)
