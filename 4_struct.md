@@ -53,8 +53,13 @@
 `  Name string`
 `  Age int`
 `}`
-`func (s *User) upAge() {`
-`  s.Age += 1`
+отличаются от обычных ф-ций наличием приемника `(var StructName)` перед именем ф-ции
+приемник может быть как обычным именем структуры, так и указателем
+`func (u *User) upAge() {`
+`  u.Age += 1`
+`}`
+`func (u User) hi() {`
+`  fmt.Println("Hi, i``m " + u.Name)`
 `}`
 
 вызов
