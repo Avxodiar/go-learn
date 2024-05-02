@@ -63,3 +63,20 @@
 `name, power := "foooo", 100500`
 и даже изменить значение
 `wtf, digit := "Serosly, wtf?", 1234`
+
+## Указатели
+`&` - оператор создания указателя
+`text := "some"`
+`textPtr := &text` - указатель на text
+`fmt.Println(*textPtr) // some`
+
+`*` - оператор разименования (получения переменной по указателю)
+`changeText(textPtr) // или &text`
+`fmt.Println(text)`
+
+`func changeText(txt *string) {`
+`	*txt = *txt + "_postfix"`
+`}`
+
+
+`new(T)` - универсальная ф-ция
